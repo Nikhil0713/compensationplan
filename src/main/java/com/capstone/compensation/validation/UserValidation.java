@@ -3,8 +3,8 @@ package com.capstone.compensation.validation;
 import java.util.HashSet;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.capstone.compensation.entity.UserEntity;
@@ -28,8 +28,9 @@ public class UserValidation {
 	@Autowired
 	UserRepository userRepository;
 
-	@Autowired
-	PasswordEncoder encoder;
+	/*@Autowired
+    @Qualifier("encoder")
+	PasswordEncoder encoder;*/
 
 	public ResponseEntity<?> validateUser(SignUpRequest signUpRequest) {
 
@@ -45,8 +46,7 @@ public class UserValidation {
 			}
 		}
 		
-		UserEntity user = new UserEntity(signUpRequest.getUsername(), signUpRequest.getEmail(),
-				encoder.encode(signUpRequest.getPassword()));
+		UserEntity user = new UserEntity(signUpRequest.getUsername(), signUpRequest.getEmail(),(signUpRequest.getPassword()));
 		String strRoles = signUpRequest.getRole();
 		Set<UserRoleEntity> roles = new HashSet<>();
 
