@@ -1,0 +1,12 @@
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\repository\UserRepository.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\controller\RegisterUserController.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\errorresponse\MessageResponse.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\entity\UserEntity.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\model\UserRoles.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\service\impl\RegisterUserServiceImpl.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\service\RegisterUserService.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\App.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\repository\UserRoleRepository.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\validation\UserValidation.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\entity\UserRoleEntity.java
+F:\microservice_workspace\capstone-user-service\src\main\java\com\capstone\compensation\model\SignUpRequest.java
